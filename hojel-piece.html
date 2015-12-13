@@ -47,9 +47,23 @@
 						
 						<hr />
 						
-						<object data="images/hojel.pdf" type="application/pdf" width="100%" height="100%">
+						<!-- <span class="image fit"><img src="images/hojel1.jpg" alt="" /></span>
+						<span class="image fit"><img src="images/hojel2.jpg" alt="" /></span>
+						<span class="image fit"><img src="images/hojel3.jpg" alt="" /></span>
+						<span class="image fit"><img src="images/hojel4.jpg" alt="" /></span>
+						<span class="image fit"><img src="images/hojel5.jpg" alt="" /></span> -->
+
+						
+						<!-- <object data="images/hojel.pdf" type="application/pdf" width="100%" height="100%">
   							<p><a href="images/hojel.pdf"></a></p>
-						</object>
+						</object> -->
+						
+						<?php
+ 		 					$dir = '/absolute/path/to/my/directory/';
+  							$name = 'myPDF.pdf';
+  							exec("/bin/convert $dir$name $dir$name.png");
+  							print '<img src="$dir$name.png" />';
+						?>
 						
 						<hr />
 							<header>
